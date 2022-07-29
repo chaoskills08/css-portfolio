@@ -1,31 +1,84 @@
 :root {
-  --maincolor: rgba(35, 173, 232, 0.803);
-  --boxcolor: rgb(0, 89, 255);
+  --boxcolor: grey;
+  --maincolor: rgb(238, 85, 85);
 }
 
 body {
+  background-color: rgb(209, 206, 206);
   display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: sans-serif;
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
+#title {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-/* Make this work */
-#nick {
-  font-size: 20px;
-  color: var(--maincolor);
+section {
+
 }
 
-.textRight {
+/* border-radius: 25px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px; */
+
+nav {
+  background-color: grey;
+  height: 60px;
+  position: relative;
+  bottom: 0;
+}
+
+nav h1 {
+  background-color: #fff;
+  padding: 6px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px;
+}
+
+
+/* Make this work */
+#nick {
   display: inline;
-  border: 2px;
-  align-items: flex-end;
+  border-radius: 24px;
+  background-color: var(--maincolor);
+  position: relative;
+  top: 16px;
+  left: 20px;
+  box-shadow: 4px 4px 10px; 
+}
+
+#h1Alt {
+  display: inline;
+  justify-content: center;
+  background-color: var(--maincolor);
+}
+
+/* .container {
+  display: flex;
+  flex: wrap;
+} */
+
+.aboutMe p {
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
 }

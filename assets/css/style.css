@@ -1,0 +1,31 @@
+:root {
+  --maincolor: rgba(35, 173, 232, 0.803);
+  --boxcolor: rgb(0, 89, 255);
+}
+
+body {
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Make this work */
+#nick {
+  font-size: 20px;
+  color: var(--maincolor);
+}
+
+.textRight {
+  display: inline;
+  border: 2px;
+  align-items: flex-end;
+}

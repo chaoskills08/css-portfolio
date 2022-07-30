@@ -11,9 +11,25 @@ body {
   font-family: sans-serif;
 }
 
+.bgrad {
+  background-image: linear-gradient(to right, grey, rgb(40, 241, 177), white)
+}
+
 #header {
   height: 120px;
   position: relative
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.section2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 nav {
@@ -76,7 +92,7 @@ a {
 }
 
 
-.justifyLeft {
+.aboutMe {
   display: flex;
   align-items: flex-end;
   margin-bottom: 90px;
@@ -91,11 +107,50 @@ a {
 
 }
 
-.aboutMe {
+.container2 {
+  display: flex;
+  flex: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  position: relative;
+
+}
+
+.aboutMeText {
   display: flex;
   width: 200px;
   justify-content: flex-end;
   position: relative;
+  margin-right: 100px;
+  border: black;
+}
+
+#work {
+  border: solid black 2px;
+  width: 400px;
+  height: 500px;
+}
+
+#workText {
+  display: flex;
+  width: 200px;
+  position: relative;
+  margin-right: 100px;
+  border: black;
+  align-items: center;
+}
+
+button:hover {
+  background-color: blue;
+  opacity: 90%;
+}
+
+button {
+  background-image: url(C:\Users\nickb\css-portfolio\assets\images\computer-lab-icon-2.jpg);
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 992px) {

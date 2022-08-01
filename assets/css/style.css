@@ -20,6 +20,11 @@ body {
   position: relative
 }
 
+h3 {
+  text-overflow: clip;
+  display: wrap;
+}
+
 section {
   padding: 100px;
 }
@@ -33,14 +38,16 @@ section {
 .section2 {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .section3 {
   display: flex;
+  flex: wrap;
   flex-direction: row;
   justify-content: space-around;
   padding: 10px;
+  font-size: 20px;
 }
 
 .section4 {
@@ -52,10 +59,6 @@ section {
   margin-right: 40px;
 }
 
-#email {
-  right: 100px;
-}
-
 nav {
   background-image: linear-gradient(to right, grey, rgb(40, 241, 177), white);
   height: 60px;
@@ -63,15 +66,16 @@ nav {
 }
 
 nav h1 {
+  display: flex;
   background-color: #fff;
   padding: 6px;
 }
 
 nav ul {
   display: flex;
-  flex: wrap;
+  /* flex: wrap; */
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
   bottom: 20px;
   right: 60px;
@@ -90,12 +94,13 @@ a {
 }
 
 .a2 {
-  /* display: flex; */
+  display: flex;
+  /* flex: 3; */
   text-decoration: none;
   text-align: center;
   width: 80px;
   margin-left: 4px;
-  border: 2px solid var(--boxcolor);
+  /* border: 2px solid var(--boxcolor); */
   border-radius: 5px;
   color: black;
   /* border-image: linear-gradient (white, rgb(40, 241, 177), grey); */
@@ -138,7 +143,7 @@ a {
 .container {
   display: flex;
   flex: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   position: relative;
 }
 
@@ -150,8 +155,23 @@ a {
   position: relative;
 }
 
+.container3 {
+  display: flex;
+  flex: wrap;
+  text-overflow: clip;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
 .h3Text {
   font-size: 20px;
+  justify-content: space-around;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .aboutMeText {
@@ -185,8 +205,11 @@ a {
   justify-content: center;
 }
 
+#Resume {
+  display: flex;
+}
+
 button {
-  background-image: url(C:\Users\nickb\css-portfolio\assets\images\computer-lab-icon-2.jpg);
   background-size: cover;
   width: 300px;
   height: 200px;
@@ -199,7 +222,7 @@ button:hover {
 }
 
 @media screen and (max-width: 992px) {
-  nav {
+  nav, h3 {
     width: 100%;
     justify-content: flex-end;
   }

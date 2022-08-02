@@ -40,9 +40,12 @@ section {
 }
 
 .section2 {
+  padding: 0px;
   display: flex;
+  text-overflow: clip;
   flex-direction: row-reverse;
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 .section3 {
@@ -99,14 +102,13 @@ a {
 
 .a2 {
   display: flex;
-  /* flex: 3; */
   text-decoration: none;
   text-align: center;
   width: 80px;
   margin-left: 4px;
-  /* border: 2px solid var(--boxcolor); */
+  /* border: 2px solid var(--boxcolor);
   border-radius: 5px;
-  color: black;
+  color: black; */
   /* border-image: linear-gradient (white, rgb(40, 241, 177), grey); */
 }
 
@@ -138,8 +140,8 @@ a {
 }
 
 #horiseon {
-  display: flex;
-  width: 40%;
+  width: 300%;
+  margin-left: 0;
 }
 
 #nickPic {
@@ -178,14 +180,6 @@ a {
   /* position: relative; */
 }
 
-.embed-responsive {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .h3Text {
   font-size: 20px;
   justify-content: space-around;
@@ -212,10 +206,10 @@ a {
 
 #workText {
   display: flex;
-  width: 200px;
+  width: 100px;
   position: relative;
-  margin-right: 100px;
-  border: black;
+  margin-right: 30px;
+  /* border: black; */
   align-items: center;
 }
 
@@ -266,6 +260,14 @@ button:hover {
     flex-direction: column;
   }
 
+  .section2 {
+    width: 100%;
+  }
+
+  #resumeImg {
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -274,9 +276,17 @@ button:hover {
     justify-content: flex-end;
   }
   .section2 {
-    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
   }
-  body {
+
+  #resumeImg {
+    width: 130%;
+  }
+
+  /* body {
     width: 100%;
-  }
+  } */
 }

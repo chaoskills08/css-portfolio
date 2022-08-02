@@ -25,6 +25,10 @@ h3 {
   display: wrap;
 }
 
+#h2Image {
+  flex: wrap;
+}
+
 section {
   padding: 100px;
 }
@@ -133,8 +137,16 @@ a {
   background-color: var(--maincolor);
 }
 
-.aboutMe {
+#horiseon {
   display: flex;
+  width: 40%;
+}
+
+#nickPic {
+  width: 50%;
+}
+
+.aboutMe {
   align-items: flex-end;
   margin-bottom: 90px;
   margin-right: 100px;
@@ -142,8 +154,10 @@ a {
 
 .container {
   display: flex;
+  flex-direction: row;
   flex: wrap;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
@@ -151,18 +165,25 @@ a {
   display: flex;
   flex: wrap;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: relative;
 }
 
 .container3 {
   display: flex;
-  flex: wrap;
   text-overflow: clip;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* position: relative; */
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .h3Text {
@@ -222,8 +243,40 @@ button:hover {
 }
 
 @media screen and (max-width: 992px) {
+  h3 {
+    flex-direction: column;
+  }
+  nav {
+    height: 200%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  /* section3, .h3Text { */
+    .h3Text {
+     text-overflow: clip;
+     justify-content: space-around;
+  }
+  #nickPic {
+    width: 50%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
   nav, h3 {
     width: 100%;
     justify-content: flex-end;
+  }
+  .section2 {
+    width: 50%;
+  }
+  body {
+    width: 100%;
   }
 }
